@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="card-header">
+      <h3 class="title" id="title">todo app</h3>
+    </div>
+
+    <ul id="task-list">
+      <li>görev 1</li>
+      <li>görev 1</li>
+      <li>görev 1</li>
+    </ul>
+
+    <script>
+      let sonuc;
+
+      sonuc = document.getElementById("title");
+      sonuc = document.getElementById("title").id;
+      sonuc = document.getElementById("title").className;
+      sonuc = document.getElementById("title").classList;
+
+      document.getElementById("title").style.fontSize = "30px";
+      document.getElementById("title").style.color = "blue";
+      //   document.getElementById("title").style.display = "none";
+
+      document.getElementById("title").innerText = "Todo App";
+      document.getElementById("title").innerHTML = "<p> Todo App </p>";
+
+      sonuc = document.querySelector("#title");
+      sonuc = document.querySelector(".card-header");
+      sonuc = document.querySelector("div");
+
+      sonuc = document.querySelector("li");
+      sonuc = document.querySelector("li:first-child");
+      sonuc = document.querySelector("li:last-child");
+      sonuc = document.querySelector("li:nth-child(1)");
+
+      //     Evet, CSS de belirli bir HTML öğesini seçmek için kullanılabilir. Ancak CSS, öğelerin görünümünü değiştirmek için tasarlanmıştır, JavaScript ise web sayfasındaki öğelerin davranışlarını değiştirmek için kullanılabilir. Bu nedenle, CSS, belirli bir öğeyi seçmek için kullanılabilecekken, belirli bir öğeye müdahale etmek, dinamik olarak değiştirmek veya özelleştirmek istediğinizde JavaScript ile tekil element seçimi yapmak gerekebilir.
+
+      // Örneğin, bir formun doğru bir şekilde doldurulup doldurulmadığını kontrol etmek için JavaScript kullanmanız gerekir. Bu işlem için, belirli bir form alanına erişmeniz, kullanıcının girdiğini kontrol etmeniz ve gerekirse hata mesajı göstermeniz gerekebilir. Bu işlemler, CSS ile yapılamaz, ancak JavaScript ile tekil element seçimi yaparak kolayca gerçekleştirilebilir.
+
+      // Bu nedenle, CSS ve JavaScript'in farklı amaçları vardır ve her biri farklı amaçlar için kullanılabilir. CSS, web sayfalarının görünümünü değiştirmek için kullanılırken, JavaScript, web sayfalarını etkileşimli hale getirmek, özelleştirmek veya dinamik olarak değiştirmek için kullanılır ve bu işlemler için tekil element seçimi önemlidir
+
+      console.log(sonuc);
+    </script>
+  </body>
+</html>

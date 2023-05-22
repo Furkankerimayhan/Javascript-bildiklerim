@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="btn">save</button>
+
+    <script>
+
+        // sync
+        //    console.log(1); 
+        //    console.log(2); 
+        //    console.log(3); 
+
+
+        // async
+        console.log(1); 
+
+        setTimeout(() => {
+            console.log(2); 
+        }, 2000);
+        
+        console.log(3); 
+
+        document.getElementById("btn").addEventListener("click", () => {
+            console.log("saved");
+        });
+
+        // api
+
+        // callback, promise, asyc-await
+
+        //Async JavaScript, asenkron programlama tekniklerini kullanarak JavaScript kodlarını yazmayı ve yönetmeyi ifade eder. Asenkron programlama, bir işlem gerçekleştirilirken diğer işlemlerin de devam etmesine izin verir, böylece işlem tamamlanana kadar beklemek zorunda kalmazsınız. Bu, kullanıcı arayüzü işlemleri gibi uzun süreli işlemleri yürütürken web sayfalarının daha duyarlı kalmasını sağlar.
+
+        //Async JavaScript, özellikle web tarayıcılarında ve Node.js gibi sunucu tarafı JavaScript ortamlarında, ağ işlemleri, dosya işlemleri ve diğer uzun süreli işlemler gibi işlemlerle çalışırken yaygın olarak kullanılır. Async JavaScript, Promises, async/await, ve callback fonksiyonları gibi araçlar kullanarak asenkron işlemlerin yönetimini kolaylaştırır.
+
+    </script>
+
+
+</body>
+</html>
